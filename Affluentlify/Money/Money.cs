@@ -17,9 +17,9 @@ namespace Affluentlify
         /// </summary>
         public string CurrencyCode { get; set; }
     
-        private int DecimalPlaces { get; set; }
+        internal int DecimalPlaces { get; set; }
 
-        private decimal AccurateAmount { get; set; }
+        internal decimal AccurateAmount { get; set; }
 
         /// <summary>
         /// Creates a new Money object. By default will round to 2 decimal places unless overload is specified or .ToDecimalPlaces(int decimalPlaces) is used
@@ -51,33 +51,6 @@ namespace Affluentlify
             AccurateAmount = amount;
             Amount = decimal.Round(amount, decimalPlaces, MidpointRounding.AwayFromZero);
             CurrencyCode = currencyCode;
-        }
-
-        public DbMoney ToDbMoney()
-        {
-            return new DbMoney(Amount, CurrencyCode);
-        }
-
-        /// <summary>
-        /// Set the number of decimal places for the money object
-        /// </summary>
-        /// <param name="decimalPlaces">The decimal places for the Amount property. Must be at least 2.</param>
-        public void ToDecimalPlaces(int decimalPlaces)
-        {
-            DecimalPlaces = decimalPlaces;
-
-            if (decimalPlaces <= 1)
-            {
-                throw new Exception("ToDecimalPlaces(int decimalPlaces) must be at least 2.");
-            }
-            else if (decimalPlaces == 2)
-            {
-                return;
-            }
-            else
-            {
-                Amount = decimal.Round(AccurateAmount, decimalPlaces, MidpointRounding.AwayFromZero);
-            }
         }
     }
 }
