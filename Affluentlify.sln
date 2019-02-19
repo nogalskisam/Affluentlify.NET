@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Affluentlify", "Affluentlify\Affluentlify.csproj", "{9CDCBA94-D3A3-4987-B5EE-1FB72CE6FDB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Affluentlify.Tests", "Affluentlify.Tests\Affluentlify.Tests.csproj", "{426D8342-18E4-4270-B1F9-4C09B146D22A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CDCBA94-D3A3-4987-B5EE-1FB72CE6FDB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CDCBA94-D3A3-4987-B5EE-1FB72CE6FDB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CDCBA94-D3A3-4987-B5EE-1FB72CE6FDB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CDCBA94-D3A3-4987-B5EE-1FB72CE6FDB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{426D8342-18E4-4270-B1F9-4C09B146D22A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{426D8342-18E4-4270-B1F9-4C09B146D22A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{426D8342-18E4-4270-B1F9-4C09B146D22A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{426D8342-18E4-4270-B1F9-4C09B146D22A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC48EB17-477A-43A2-BE7B-96F422C1B157}
+	EndGlobalSection
+EndGlobal
